@@ -30,7 +30,7 @@ Accept-Language|语言【zh：中文（默认）】、【en：英文】
 
 参数|是否必填|类型|描述
 ---|---|---|---
-address|是|str|地址
+address|是|array|待检测地址列表
 
 ```json
 {

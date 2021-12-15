@@ -125,3 +125,49 @@ sample response for `https://api.gopocket.security/137?contract_addresses=0x8ae1
   }
 }
 ```
+
+## 3. Get realtime automatic detection of any token
+
+>URL: https://api.gopocket.security/id/contract_address
+
+>Method：GET
+
+>Parameters:
+
+Parameter|Description|Required
+---|---|---
+id|The `id` of the blockchain|Yes
+contract_address|The contract address of token, lowercased|Yes
+
+
+>Response:
+
+Parameter|Description
+---|---
+status|`1` means success, `2` means detection in progress
+message|`OK` for success, `Pending` for detection in progress, `Error message` for failure
+level|`danger`/`warn`/`safe`
+
+sample response for `https://api.gopocket.security/137?contract_addresses=0x8ae127d224094cb1b27e1b28a472e588cbcc7620,0xb33eaad8d922b1083446dc23f610c2567fb5180f`:
+```json
+{
+  "status": "1",
+  "message": "OK",
+  "result": {
+  "ownerAddress": null,
+  "ownerFuncName": null,
+  "tokenContract": false,
+  "openSource": true,
+  "addable": false,
+  "inDex": true,
+  "modified": false,
+  "completeMatched": true,
+  "stackOverflow": false,
+  "delegated": false,
+  "dangerSlippage": false,
+  "blackList": false,
+  "cannotBuy": false,
+  "owner": false
+  }
+}
+```

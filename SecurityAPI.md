@@ -1,6 +1,6 @@
 ## 1. Get supported blockchains
 
->URL: https://api.gopocket.security/supported_chains
+>URL: https://api.gopocket.security/api/v1/supported_chains
 
 >Method：GET
 

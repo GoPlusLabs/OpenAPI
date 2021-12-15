@@ -148,7 +148,7 @@ status|`1` means success, `2` means detection in progress
 message|`OK` for success, `Pending` for detection in progress, `Error message` for failure
 level|`danger`/`warn`/`safe`
 
-sample response for `https://api.gopocket.security/137?contract_addresses=0x8ae127d224094cb1b27e1b28a472e588cbcc7620,0xb33eaad8d922b1083446dc23f610c2567fb5180f`:
+sample response for `https://api.gopocket.security/56/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c`:
 ```json
 {
   "status": "1",

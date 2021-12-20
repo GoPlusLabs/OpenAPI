@@ -1,6 +1,6 @@
 ## 1. Get supported blockchains
 
->URL: https://api.gopocket.security/api/v1/supported_chains
+>URL: https://api.gopluslabs.io/api/v1/supported_chains
 
 >Method：GET
 
@@ -10,14 +10,14 @@
 
 Parameter|Description
 ---|---
-status|`1` means success
+code|`1` means success
 message|`OK` for success, `Error message` for failure
 result| supported blockchain list, in which `id` is the path for token security information API
 
 
 ```json
 {
-  "status": "1",
+  "code": 1,
   "message": "OK",
   "result": [
     {
@@ -50,7 +50,7 @@ result| supported blockchain list, in which `id` is the path for token security 
 
 ## 2. Get current security information of any tokens
 
->URL: https://api.gopocket.security/api/v1/token_security/id?contract_addresses=
+>URL: https://api.gopluslabs.io/api/v1/token_security/{id}?contract_addresses=
 
 >Method：GET
 
@@ -66,14 +66,14 @@ contract_addresses|The contract address of tokens, comma separated and lowercase
 
 Parameter|Description
 ---|---
-status|`1` means success
+code|`1` means success
 message|`OK` for success, `Error message` for failure
 level|`danger`/`warn`/`safe`
 
-sample response for `https://api.gopocket.security/api/v1/token_security/137?contract_addresses=0x8ae127d224094cb1b27e1b28a472e588cbcc7620,0xb33eaad8d922b1083446dc23f610c2567fb5180f`:
+sample response for `https://api.gopluslabs.io/api/v1/token_security/137?contract_addresses=0x8ae127d224094cb1b27e1b28a472e588cbcc7620,0xb33eaad8d922b1083446dc23f610c2567fb5180f`:
 ```json
 {
-  "status": "1",
+  "code": 1,
   "message": "OK",
   "result": {
     "0x8ae127d224094cb1b27e1b28a472e588cbcc7620": [
@@ -128,7 +128,7 @@ sample response for `https://api.gopocket.security/api/v1/token_security/137?con
 
 ## 3. Get realtime automatic detection of any token
 
->URL: https://api.gopocket.security/api/v1/token_detection/id/contract_address
+>URL: https://api.gopluslabs.io/api/v1/token_detection/{id}/{contract_address}
 
 >Method：GET
 
@@ -144,14 +144,14 @@ contract_address|The contract address of token, lowercased|Yes
 
 Parameter|Description
 ---|---
-status|`1` means success, `2` means detection in progress
+code|`1` means success, `2` means detection in progress
 message|`OK` for success, `Pending` for detection in progress, `Error message` for failure
 level|`danger`/`warn`/`safe`
 
-sample response for `https://api.gopocket.security/api/v1/token_detection/56/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c`:
+sample response for `https://api.gopluslabs.io/api/v1/token_detection/56/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c`:
 ```json
 {
-  "status": "1",
+  "code": 1,
   "message": "OK",
   "result": {
   "ownerAddress": null,

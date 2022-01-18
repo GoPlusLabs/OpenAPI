@@ -102,7 +102,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
         "holders": [
             {
                 "address": "0x4c46c1487114caedb6b687cc280a3843a13a5749",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "",
                 "is_contract": 0,
                 "balance": "9000000000000000",
@@ -110,7 +110,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
             },
             {
                 "address": "0x8157789f5a5710ea73fb513745467c91c080a6a1",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "",
                 "is_contract": 0,
                 "balance": "544495675406708.031895221640068061",
@@ -118,7 +118,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
             },
             {
                 "address": "0x94e5efa12063945e8420bad953957cf1a38b4266",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "",
                 "is_contract": 0,
                 "balance": "207388633622433.650262684701488034",
@@ -126,7 +126,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
             },
             {
                 "address": "0xa180fe01b906a1be37be6c534a3300785b20d947",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "Binance: Hot Wallet 16",
                 "is_contract": 0,
                 "balance": "72565140320087.617773419248969361",
@@ -134,7 +134,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
             },
             {
                 "address": "0x714876f7cc6978a44967abaf89b5a947a3b4906d",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "PancakeSwap V2: Bossy Dog-BSC-USD",
                 "is_contract": 0,
                 "balance": "2193490344020.496645383595828923",
@@ -142,7 +142,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
             },
             {
                 "address": "0x64899def3e65ea4f3eb9317af332470796174098",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "",
                 "is_contract": 0,
                 "balance": "1598397511519.545430580835518453",
@@ -150,7 +150,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
             },
             {
                 "address": "0xa693618f14f5cedbccc2bed086afabd2a61f3899",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "",
                 "is_contract": 0,
                 "balance": "830086593532.244134097340162959",
@@ -158,7 +158,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
             },
             {
                 "address": "0x838b12f13ce59bb9ec8f3a737463b7c2e0fcf28c",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "",
                 "is_contract": 0,
                 "balance": "300000000",
@@ -166,7 +166,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
             },
             {
                 "address": "0xfd48417ced58a470b4b46c4d6ec907320626c5d5",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "",
                 "is_contract": 0,
                 "balance": "230000000",
@@ -174,7 +174,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
             },
             {
                 "address": "0x8e8670b89a9cef34c6b912c4bd5dd3bcf36192db",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "",
                 "is_contract": 0,
                 "balance": "212296574.442954725762054946",
@@ -186,7 +186,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
         "lp_holders": [
             {
                 "address": "0x8157789f5a5710ea73fb513745467c91c080a6a1",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "",
                 "is_contract": 0,
                 "balance": "1680371.847121530760972273",
@@ -194,7 +194,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
             },
             {
                 "address": "0xb1b9b4bbe8a92d535f5df2368e7fd2ecfb3a1950",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "",
                 "is_contract": 0,
                 "balance": "24321.255009529292961923",
@@ -202,7 +202,7 @@ sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract
             },
             {
                 "address": "0x0000000000000000000000000000000000000000",
-                "isLocked": 0,
+                "is_locked": 0,
                 "tag": "Null Address: 0x000...000",
                 "is_contract": 1,
                 "balance": "0.000000000000001",

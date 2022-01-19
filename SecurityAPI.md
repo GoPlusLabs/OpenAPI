@@ -17,34 +17,34 @@ result| supported blockchain list, in which `id` is the path for token security 
 
 ```json
 {
-  "code": 1,
-  "message": "OK",
-  "result": [
-    {
-      "id": "1",
-      "name": "ethereum"
-    },
-    {
-      "id": "56",
-      "name": "bsc"
-    },
-    {
-      "id": "42161",
-      "name": "arbitrum"
-    },
-    {
-      "id": "137",
-      "name": "polygon"
-    },
-    {
-      "id": "128",
-      "name": "heco"
-    },
-    {
-      "id": "43114",
-      "name": "avalanche"
-    }
-  ]
+    "code": 1,
+    "message": "OK",
+    "result": [
+        {
+            "id": "1",
+            "name": "eth"
+        },
+        {
+            "id": "56",
+            "name": "bsc"
+        },
+        {
+            "id": "42161",
+            "name": "arbitrum"
+        },
+        {
+            "id": "137",
+            "name": "polygon"
+        },
+        {
+            "id": "128",
+            "name": "heco"
+        },
+        {
+            "id": "43114",
+            "name": "avalanche"
+        }
+    ]
 }
 ```
 
@@ -69,147 +69,242 @@ Parameter|Description
 code|`1` means success
 message|`OK` for success, `Error message` for failure
 
-sample response for `https://api.gopluslabs.io/api/v1/token_security/56?contract_addresses=0x547a1d47be3890af07dbe2d641d36e2984dbf5da`:
+sample response for `https://api.gopluslabs.io/api/v1/token_security/1?contract_addresses=0x408e41876cccdc0f92210600ef50372656052a38`:
 ```json
 {
-  "code": 1,
-  "message": "OK",
-  "result": {
-    "0x547a1d47be3890af07dbe2d641d36e2984dbf5da": {
-        "is_open_source": 1,
-        "is_proxy": 0,
-        "owner_address": "0x744aF9cBb7606BB040f6FBf1c0a0B0dcBA6385E5",
-        "is_mintable": 1,
-        "slippage_modifiable": 1,
-        "is_blacklisted": 1,
-        "is_whitelisted": 0,
-        "can_take_back_ownership": 0,
-        "transfer_pausable": 1,
-        "is_honeypot": 0,
-        "is_anti_whale": 0,
-        "is_in_dex": 1,
-        "dexs": [
-            {
-                "name": "PancakeV2",
-                "liquidity": 1.350085492413504,
-                "pair": "0x714876f7cc6978a44967aBaF89B5a947a3B4906d"
-            }
-        ],
-        "buy_tax": -1,
-        "sell_tax": -1,
-        "holder_count": 115,
-        "total_supply": "9829073597816940",
-        "holders": [
-            {
-                "address": "0x4c46c1487114caedb6b687cc280a3843a13a5749",
-                "is_locked": 0,
-                "tag": "",
-                "is_contract": 0,
-                "balance": "9000000000000000",
-                "percent": "0.915651"
-            },
-            {
-                "address": "0x8157789f5a5710ea73fb513745467c91c080a6a1",
-                "is_locked": 0,
-                "tag": "",
-                "is_contract": 0,
-                "balance": "544495675406708.031895221640068061",
-                "percent": "0.055396"
-            },
-            {
-                "address": "0x94e5efa12063945e8420bad953957cf1a38b4266",
-                "is_locked": 0,
-                "tag": "",
-                "is_contract": 0,
-                "balance": "207388633622433.650262684701488034",
-                "percent": "0.021100"
-            },
-            {
-                "address": "0xa180fe01b906a1be37be6c534a3300785b20d947",
-                "is_locked": 0,
-                "tag": "Binance: Hot Wallet 16",
-                "is_contract": 0,
-                "balance": "72565140320087.617773419248969361",
-                "percent": "0.007383"
-            },
-            {
-                "address": "0x714876f7cc6978a44967abaf89b5a947a3b4906d",
-                "is_locked": 0,
-                "tag": "PancakeSwap V2: Bossy Dog-BSC-USD",
-                "is_contract": 0,
-                "balance": "2193490344020.496645383595828923",
-                "percent": "0.000223"
-            },
-            {
-                "address": "0x64899def3e65ea4f3eb9317af332470796174098",
-                "is_locked": 0,
-                "tag": "",
-                "is_contract": 0,
-                "balance": "1598397511519.545430580835518453",
-                "percent": "0.000163"
-            },
-            {
-                "address": "0xa693618f14f5cedbccc2bed086afabd2a61f3899",
-                "is_locked": 0,
-                "tag": "",
-                "is_contract": 0,
-                "balance": "830086593532.244134097340162959",
-                "percent": "0.000084"
-            },
-            {
-                "address": "0x838b12f13ce59bb9ec8f3a737463b7c2e0fcf28c",
-                "is_locked": 0,
-                "tag": "",
-                "is_contract": 0,
-                "balance": "300000000",
-                "percent": "0.000000"
-            },
-            {
-                "address": "0xfd48417ced58a470b4b46c4d6ec907320626c5d5",
-                "is_locked": 0,
-                "tag": "",
-                "is_contract": 0,
-                "balance": "230000000",
-                "percent": "0.000000"
-            },
-            {
-                "address": "0x8e8670b89a9cef34c6b912c4bd5dd3bcf36192db",
-                "is_locked": 0,
-                "tag": "",
-                "is_contract": 0,
-                "balance": "212296574.442954725762054946",
-                "percent": "0.000000"
-            }
-        ],
-        "lp_total_supply": "1704693.102131",
-        "lp_holder_count": 3,
-        "lp_holders": [
-            {
-                "address": "0x8157789f5a5710ea73fb513745467c91c080a6a1",
-                "is_locked": 0,
-                "tag": "",
-                "is_contract": 0,
-                "balance": "1680371.847121530760972273",
-                "percent": "0.985733"
-            },
-            {
-                "address": "0xb1b9b4bbe8a92d535f5df2368e7fd2ecfb3a1950",
-                "is_locked": 0,
-                "tag": "",
-                "is_contract": 0,
-                "balance": "24321.255009529292961923",
-                "percent": "0.014267"
-            },
-            {
-                "address": "0x0000000000000000000000000000000000000000",
-                "is_locked": 0,
-                "tag": "Null Address: 0x000...000",
-                "is_contract": 1,
-                "balance": "0.000000000000001",
-                "percent": "0.000000"
-            }
-        ]
+    "code": 1,
+    "message": "OK",
+    "result": {
+        "0x408e41876cccdc0f92210600ef50372656052a38": {
+            "is_open_source": "1",
+            "is_proxy": "0",
+            "is_in_dex": "1",
+            "owner_address": "0x0000000000000000000000000000000000000001",
+            "is_mintable": "0",
+            "slippage_modifiable": "0",
+            "is_blacklisted": "0",
+            "is_whitelisted": "0",
+            "can_take_back_ownership": "0",
+            "transfer_pausable": "1",
+            "is_honeypot": "0",
+            "dexs": [
+                {
+                    "name": "SushiSwapV2",
+                    "liquidity": "2981850.51781834",
+                    "pair": "0x611CDe65deA90918c0078ac0400A72B0D25B9bb1"
+                },
+                {
+                    "name": "UniswapV2",
+                    "liquidity": "634935.23490144",
+                    "pair": "0x8Bd1661Da98EBDd3BD080F0bE4e6d9bE8cE9858c"
+                },
+                {
+                    "name": "UniswapV3",
+                    "liquidity": "96434.22749409106546130204818368792",
+                    "pair": "0x2dd56b633faa1a5b46107d248714c9ccb6e20920"
+                },
+                {
+                    "name": "UniswapV3",
+                    "liquidity": "6965.914985999999999999999999999999",
+                    "pair": "0x8dd240195b2cd7c0a118166cba02512f52e9e360"
+                },
+                {
+                    "name": "UniswapV3",
+                    "liquidity": "6463.504842668805484531793163914657",
+                    "pair": "0x08eac73f000d724678281155c879c50fc6094824"
+                },
+                {
+                    "name": "UniswapV2",
+                    "liquidity": "2108.20817495",
+                    "pair": "0x5e4206B6AA6e919B2bc6E813EA0ffB9B3C8aC042"
+                },
+                {
+                    "name": "SushiSwapV2",
+                    "liquidity": "427.58647288",
+                    "pair": "0x07d04AaAd8108ca86e0F1c792Bf165f63A5FedDE"
+                },
+                {
+                    "name": "UniswapV2",
+                    "liquidity": "290.79024973",
+                    "pair": "0x07F068ca326a469Fc1d87d85d448990C8cBa7dF9"
+                },
+                {
+                    "name": "UniswapV2",
+                    "liquidity": "15.70976724",
+                    "pair": "0x2d0A1c45cD6f7CDb718703d0897c877EFc9dB9F7"
+                }
+            ],
+            "buy_tax": "0",
+            "sell_tax": "0",
+            "holder_count": "58345",
+            "total_supply": "999999632.80375",
+            "holders": [
+                {
+                    "address": "0x60ab11fe605d2a2c3cf351824816772a131f8782",
+                    "is_locked": 0,
+                    "tag": "RenVM: Darknode Staking",
+                    "is_contract": 1,
+                    "balance": 180300000,
+                    "percent": 0.1803
+                },
+                {
+                    "address": "0xbe0eb53f46cd790cd13851d5eff43d12404d33e8",
+                    "is_locked": 0,
+                    "tag": "Binance 7",
+                    "is_contract": 0,
+                    "balance": 78596041,
+                    "percent": 0.078596
+                },
+                {
+                    "address": "0x56a298549d4c4ea4bbae1e7dbc17f01cecbd134c",
+                    "is_locked": 0,
+                    "tag": "",
+                    "is_contract": 0,
+                    "balance": 55840471.1137,
+                    "percent": 0.05584
+                },
+                {
+                    "address": "0xcc12abe4ff81c9378d670de1b57f8e0dd228d77a",
+                    "is_locked": 0,
+                    "tag": "Aave: aREN Token V2",
+                    "is_contract": 1,
+                    "balance": 42652557.55216556,
+                    "percent": 0.042653
+                },
+                {
+                    "address": "0xf977814e90da44bfa03b6295a0616a897441acec",
+                    "is_locked": 0,
+                    "tag": "Binance 8",
+                    "is_contract": 0,
+                    "balance": 31869917,
+                    "percent": 0.03187
+                },
+                {
+                    "address": "0x28c6c06298d514db089934071355e5743bf21d60",
+                    "is_locked": 0,
+                    "tag": "Binance 14",
+                    "is_contract": 0,
+                    "balance": 24200509.363724675,
+                    "percent": 0.024201
+                },
+                {
+                    "address": "0x5a27dbbff05f36dc927137855e3381f0c20c1cdd",
+                    "is_locked": 0,
+                    "tag": "barbellcap.eth",
+                    "is_contract": 0,
+                    "balance": 16698561.151978942,
+                    "percent": 0.016699
+                },
+                {
+                    "address": "0x8d6f396d210d385033b348bcae9e4f9ea4e045bd",
+                    "is_locked": 0,
+                    "tag": "Gemini 6",
+                    "is_contract": 1,
+                    "balance": 13190001,
+                    "percent": 0.01319
+                },
+                {
+                    "address": "0x2faf487a4414fe77e2327f0bf4ae2a264a776ad2",
+                    "is_locked": 0,
+                    "tag": "FTX Exchange",
+                    "is_contract": 0,
+                    "balance": 11743699.406551864,
+                    "percent": 0.011744
+                },
+                {
+                    "address": "0x3dfd23a6c5e8bbcfc9581d2e864a68feb6a076d3",
+                    "is_locked": 0,
+                    "tag": "Aave: Lending Pool Core V1",
+                    "is_contract": 1,
+                    "balance": 11582819.641038848,
+                    "percent": 0.011583
+                }
+            ],
+            "lp_holder_count": "18",
+            "lp_total_supply": "56774.406833359",
+            "lp_holders": [
+                {
+                    "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
+                    "is_locked": 0,
+                    "tag": "SushiSwap: MasterChef LP Staking Pool",
+                    "is_contract": 1,
+                    "balance": 56620.25850449379,
+                    "percent": 0.997285
+                },
+                {
+                    "address": "0x5ad6211cd3fde39a9cecb5df6f380b8263d1e277",
+                    "is_locked": 0,
+                    "tag": "",
+                    "is_contract": 0,
+                    "balance": 82.44701298242764,
+                    "percent": 0.001452
+                },
+                {
+                    "address": "0x3262e972cfd24d942adbeac06401900bffe8c460",
+                    "is_locked": 0,
+                    "tag": "",
+                    "is_contract": 0,
+                    "balance": 25.612412485050267,
+                    "percent": 0.000451
+                },
+                {
+                    "address": "0x6300a843dbfc8f328da7db5b27cc50c796b3eca8",
+                    "is_locked": 0,
+                    "tag": "",
+                    "is_contract": 0,
+                    "balance": 19.881271010209034,
+                    "percent": 0.00035
+                },
+                {
+                    "address": "0xe7237c145bba62500d7089afa6cc58cbd7ab28b3",
+                    "is_locked": 0,
+                    "tag": "",
+                    "is_contract": 0,
+                    "balance": 13.193117876666262,
+                    "percent": 0.000232
+                },
+                {
+                    "address": "0x8cb20f59e717d2debac27c7271370dc365f77be7",
+                    "is_locked": 0,
+                    "tag": "",
+                    "is_contract": 0,
+                    "balance": 3.6649273869192607,
+                    "percent": 6.5e-5
+                },
+                {
+                    "address": "0x7822159ee394d14745cde63a706f965fb73c7ac8",
+                    "is_locked": 0,
+                    "tag": "",
+                    "is_contract": 0,
+                    "balance": 2.899154230862371,
+                    "percent": 5.1e-5
+                },
+                {
+                    "address": "0x760f7de3389b857fa0f72a5cb618e2f2ee5fe003",
+                    "is_locked": 0,
+                    "tag": "",
+                    "is_contract": 0,
+                    "balance": 1.4415181625500633,
+                    "percent": 2.5e-5
+                },
+                {
+                    "address": "0x186e20ae3530520c9f3e6c46f2f5d1062b784761",
+                    "is_locked": 0,
+                    "tag": "lawpanda.eth",
+                    "is_contract": 0,
+                    "balance": 1.3352582736569354,
+                    "percent": 2.4e-5
+                },
+                {
+                    "address": "0x43f22c5f91a2891c6e6cb5d849ed94b62d283331",
+                    "is_locked": 0,
+                    "tag": "",
+                    "is_contract": 0,
+                    "balance": 1.145068758713511,
+                    "percent": 2.0e-5
+                }
+            ]
+        }
     }
-  }
 }
 ```
